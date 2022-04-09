@@ -11,6 +11,7 @@ jobs:
       - run: make install
       - run: make build
       - run: make start
+      - 
   linter:
     needs: build
     steps:
@@ -18,4 +19,4 @@ jobs:
   test:
     needs: build
     steps:
-      - run test
+      - run: test
